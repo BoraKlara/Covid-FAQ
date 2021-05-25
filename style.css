@@ -81,3 +81,12 @@ h1 {
   height: 30px;
   width: 30px;
 }
+
+/* x icon doesn't show when closed*/
+.faq-toggle .fa-timme {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  display: block;
+}
