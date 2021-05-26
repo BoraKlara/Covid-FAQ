@@ -70,6 +70,7 @@ h1 {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,9 +83,14 @@ h1 {
   width: 30px;
 }
 
+.faq-toggle:focus {
+  outline: 0;
+}
+
 /* x icon don't show when closed*/
 .faq-toggle .fa-times {
   display: none;
+  color: #fff;
 }
 
 /* x icon show wnen action, but  chevron dont show*/
@@ -94,4 +100,9 @@ h1 {
 
 .faq.active .faq-toggle .fa-chevron-down {
   display: none;
+}
+
+/*when active */
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
 }
